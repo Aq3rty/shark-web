@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Shark Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="sidebar">
+        <h2>КАНАЛЫ</h2>
+        <ul id="channels">
+            <li data-channel="general" class="active">#general</li>
+            <li data-channel="dev">#dev</li>
+            <li data-channel="news">#news</li>
+            <li data-channel="random">#random</li>
+        </ul>
+    </div>
+
+    <div class="chat">
+        <div class="chat-header">
+            <h2 id="channel-title">#general</h2>
+        </div>
+
+        <div class="messages" id="messages"></div>
+
+        <div class="input">
+            <input id="msgInput" type="text" placeholder="Напиши сообщение…">
+            <button id="sendBtn">SEND</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <h3>Профиль</h3>
+        <p><b>Имя:</b> Youncrazy</p>
+        <p><b>Описание:</b> Создатель Shark</p>
+    </div>
+</div>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
